@@ -1,0 +1,525 @@
+/* General purpose CSS setup for the whole page */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
+}
+
+body[type="doc"] {
+  background-color: #f1f3f4;
+}
+
+body[theme="purple"] {
+  --theme-color: #651fff;
+  --theme-color-darker: #0100ca;
+}
+
+body[theme="pink"] {
+  --theme-color: #ba5576;
+  --theme-color-darker: #87254b;
+}
+
+body[theme="blue"] {
+  --theme-color: #1565c0;
+  --theme-color-darker: #003c8f;
+}
+
+body[theme="red"] {
+  --theme-color: #d50000;
+  --theme-color-darker: #9b0000;
+}
+
+body[theme="green"] {
+  --theme-color: #1b5e20;
+  --theme-color-darker: #003300;
+}
+
+body[theme="gray"] {
+  --theme-color: #455a64;
+  --theme-color-darker: #1c313a;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h2,
+h3,
+h4,
+p {
+  font-weight: 400;
+}
+
+p {
+  margin: 1.5em 0;
+  padding: 0;
+  line-height: 1.75em;
+}
+
+/* For a lot of the navigation setup, the content will need to be vertically
+ * adjusted, so we want to have it all flex.
+ */
+.page-wrapper,
+.page-top-nav,
+.site-logo-wrapper,
+.site-name,
+.top-nav-tabs,
+.top-nav-tabs tab a,
+tab,
+.info-links,
+.info-links a,
+.landing-page-description,
+.page-footer,
+.content,
+.landing-page-row,
+.landing-page-buttons-row,
+.landing-page-carousel-row,
+.carousel,
+.carousel-deck,
+.carousel-indicators,
+.carousel-controls,
+.carousel-controls div,
+.carousel-controls i,
+.content-pane,
+.toc {
+  display: flex;
+}
+
+/* To make it easier to manage all of the element placement and organizing,
+ * wrap everything on the page.
+ * We're hiding the overflow because if the page gets short enough, we should
+ * adapt the content layout according to the dimensions of the user's device.
+ */
+.page-wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* To make any sort of relational content placement easier to manage, make the
+ * top nav relative.
+ */
+.page-top-nav,
+.site-logo,
+.site-name,
+.top-nav-tabs,
+tab,
+.info-links,
+.landing-page-description,
+.landing-page-carousel-row,
+.page-footer,
+.content,
+.carousel,
+.carousel-indicators,
+.carousel-controls,
+.carousel-controls div,
+.content-pane,
+.toc {
+  position: relative;
+}
+
+/* Making all of the top nav elements fill the full height makes styling and
+ * scaling a lot easier.
+ */
+.page-top-nav,
+.site-logo-wrapper,
+.site-name,
+.top-nav-tabs tab a,
+.info-links a {
+  height: 3em;
+  align-items: center;
+}
+
+/* Set up the top nav */
+.page-top-nav {
+  background-color: #fff;
+  height: fit-content;
+  width: 100%;
+  align-items: center;
+  padding: 0 0.5em;
+  z-index: 2;
+}
+
+.page-top-nav a,
+.landing-page-row a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page-top-nav a {
+  color: #425066;
+}
+
+.site-logo-wrapper {
+  min-width: 3em;
+  justify-content: center;
+}
+
+.site-logo {
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  overflow: hidden;
+}
+
+.site-logo:before {
+  content:
+    url(https://lh3.googleusercontent.com/-RQcph0d1GU8/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnpU3sXa-3RHmWsWnnkTYmaDN_yNQ.CMID/s32-c/photo.jpg) / "Site logo - Adora from She-Ra";
+}
+
+.site-name,
+.top-nav-tabs tab a {
+  white-space: nowrap;
+}
+
+.site-name {
+  align-items: center;
+}
+
+.site-name-link {
+  font-size: 1.5em;
+}
+
+.colored-title {
+  color: #7D55AD;
+}
+
+.bottom-shadow {
+  box-shadow:
+    0 0.15em 0.15em 0 rgba(60,64,67,.3),
+    0 0.15em 0.15em -0.15em rgba(60,64,67,.15);
+}
+
+.top-shadow {
+  box-shadow:
+    0 0 0 0,
+    0 0.15em 0.15em 0.25em rgba(60,64,67,.15);
+  border-radius: 0.15em;
+}
+
+/* Landing page description */
+.landing-page-description {
+  background: var(--theme-color);
+  color: #fff;
+  z-index: 1;
+}
+
+.landing-page-description {
+  padding: 0 1em;
+}
+
+/* To make information distinction easier, we set the width to 100% to split
+ * up the main content navigation tabs and the external links.
+ */
+.top-nav-tabs {
+  width: 100%;
+  margin: 0 0 0 2.5em;
+}
+
+.top-nav-tabs tab a {
+  padding: 0 1em;
+}
+
+.top-nav-tabs tab a:after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: #425066;
+  border-radius: 0.25em 0.25em 0 0;
+  height: 0.25em;
+  width: 50%;
+  left: 25%;
+  top: 2.8em;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.top-nav-tabs tab a:active:after,
+.top-nav-tabs tab a:focus:after,
+.top-nav-tabs tab a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.info-links a {
+  height: 2em;
+  margin: 0 0.5em 0 0;
+  padding: 0 0.5em;
+}
+
+.info-links a:last-child {
+  margin: 0 1em 0 0;
+}
+
+.info-links a:active,
+.info-links a:focus,
+.info-links a:hover {
+  background: #f5f6f7;
+  border: 0;
+  border-radius: 0.25em;
+  transition: background 0.25s linear;
+}
+
+/* Left-hand nav (sitemap) */
+.page-left-nav {
+  height: 100%;
+  width: 15em;
+  background: rgba(128,134,139,.26);
+  border-radius: 1em;
+}
+
+.sitemap {
+  height: 100%;
+  width: 14em;
+  background: #fff;
+  box-shadow:
+    0 1px 2px 0 rgba(60,64,67,.3),
+    0 1px 3px 1px rgba(60,64,67,.15);
+  position: fixed;
+  z-index: 0;
+}
+
+/* Landing page */
+.landing-page-row {
+  padding: 1em 1em;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing-page-text-row {
+  max-width: 30em;
+}
+
+.landing-page-media-item img,
+.carousel img {
+  max-width: 35em;
+  margin: 0 2em;
+}
+
+.image-description {
+  text-align: center;
+}
+
+.landing-page-buttons-row {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing-page-button {
+  background: var(--theme-color);
+  color: #fff;
+  height: 3em;
+  width: 12em;
+  padding: 0 0.5em;
+  margin: 0.5em 1em;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition:
+    background-color .2s,
+    border .2s,
+    box-shadow .2s,
+    -webkit-box-shadow .2s;
+}
+
+.landing-page-button:active,
+.landing-page-button:focus,
+.landing-page-button:hover {
+  background: var(--theme-color-darker);
+  box-shadow:
+    0 1px 2px 0 rgba(60,64,67,.3),
+    0 1px 3px 1px rgba(60,64,67,.15);
+}
+
+.landing-page-media-item p {
+  text-align: center;
+}
+
+.landing-page-carousel-row {
+  width: 45em;
+  justify-content: center;
+}
+
+@media (min-width: 100em) {
+  .landing-page-carousel-row {
+    margin: 0 0 0 5em;
+  }
+}
+
+/* Content pane */
+.content {
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.landing-page-description + .content {
+  align-items: center;
+}
+
+/* Footer */
+.page-footer {
+  background-color: #fff;
+  padding: 0 2em;
+  flex-direction: column;
+}
+
+.sitemap ~ .page-footer {
+  z-index: -1;
+  left: 14em;
+  max-width: calc(100% - 16em);
+}
+
+.page-footer h3 {
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+.page-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.page-footer ul li {
+  padding: 0.5em 0;
+}
+
+/* Carousel */
+.carousel {
+  flex-direction: row;
+  max-width: 35em;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.carousel-deck {
+  transition:
+    transform .8s cubic-bezier(0.43, 0, 0.47, 1);
+}
+
+.carousel-slide {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  max-width: 40em;
+}
+
+.carousel-slide img {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators {
+  width: 100%;
+  justify-content: center;
+}
+
+.carousel-indicator {
+  padding: 0 0.25em;
+}
+
+.carousel-indicator:after {
+  height: 1em;
+  width: 1em;
+  background: #f5f6f7;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.carousel-indicator:active:after,
+.carousel-indicator:focus:after,
+.carousel-indicator:hover:after {
+  background: #c2c3c4;
+}
+
+.carousel-indicator[active]:after {
+  background: #929394;
+}
+
+.carousel-controls {
+  width: 35.1em;
+  bottom: 30em;
+}
+
+.carousel-controls div {
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.previous-button {
+  left: -5em;
+}
+
+.carousel-control-buffer {
+  margin: auto;
+}
+
+.next-button {
+  right: -5em;
+}
+
+.carousel-controls i {
+  height: 2em;
+  width: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-controls i:active,
+.carousel-controls i:focus,
+.carousel-controls i:hover {
+  box-shadow: 0 0 0 0.15em #f5f6f7;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.carousel-description {
+  max-width: 30em;
+  margin: -1em auto 0 auto;
+  text-align: center;
+}
+
+/* Material icons */
+.material-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Doc content pane */
+.content-pane {
+  flex-direction: column;
+  left: 15em;
+}
+
+.toc {
+  flex-direction: column;
+}

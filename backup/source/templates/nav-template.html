@@ -1,0 +1,73 @@
+$if(nav)$
+<!--<p>TLO: $nav$</p>-->
+$for(nav)$
+<!--<p>TLO: $nav$</p>-->
+<!--<p>Top-level tab: $nav.upper_tabs$</p>-->
+$if(nav.upper_tabs)$
+<!--<p>Top-level tab: $nav.upper_tabs$</p>-->
+$for(nav.upper_tabs)$
+$if(nav.upper_tabs.tab)$
+$for(nav.upper_tabs.tab)$
+<div class="tab">
+$if(nav.upper_tabs.tab.name)$
+<p>Top-level tab name: $nav.upper_tabs.tab.name$</p>
+$endif$
+$if(nav.upper_tabs.tab.type)$
+<p>Top-level tab type: $nav.upper_tabs.tab.type$</p>
+$endif$
+$if(nav.upper_tabs.tab.path)$
+<p>Top-level tab path: $nav.upper_tabs.tab.path$</p>
+$endif$
+$if(nav.upper_tabs.tab.lower_tabs)$
+$for(nav.upper_tabs.tab.lower_tabs)$
+$if(nav.upper_tabs.tab.lower_tabs.tab)$
+$for(nav.upper_tabs.tab.lower_tabs.tab)$
+$if(nav.upper_tabs.tab.lower_tabs.tab.name)$
+  <p>Lower-tab tab name: $nav.upper_tabs.tab.lower_tabs.tab.name$</p>
+$endif$
+$if(nav.upper_tabs.tab.lower_tabs.tab.type)$
+  <p>Lower-tab tab type: $nav.upper_tabs.tab.lower_tabs.tab.type$</p>
+$endif$
+$if(nav.upper_tabs.tab.lower_tabs.tab.path)$
+  <p>Lower-tab tab path: $nav.upper_tabs.tab.lower_tabs.tab.path$</p>
+$endif$
+$if(nav.upper_tabs.tab.lower_tabs.tab.contents)$
+$for(nav.upper_tabs.tab.lower_tabs.tab.contents)$
+$if(nav.upper_tabs.tab.lower_tabs.tab.contents.page)$
+    <p>Page name: $nav.upper_tabs.tab.lower_tabs.tab.contents.page$</p>
+$endif$
+$if(nav.upper_tabs.tab.lower_tabs.tab.contents.path)$
+    <p>Page path: $nav.upper_tabs.tab.lower_tabs.tab.contents.path$</p>
+$endif$
+$endfor$
+$endif$
+$endfor$
+$endif$
+$endfor$
+$endif$
+$endfor$
+$endif$
+</div>
+$endfor$
+<!--<p>Top-level tab: $nav.external_tabs$</p>-->
+$elseif(nav.external_tabs)$
+$for(nav.external_tabs)$
+<div class="tab">
+$if(nav.external_tabs.tab)$
+$for(nav.external_tabs.tab)$
+$if(nav.external_tabs.tab.name)$
+<p>Top-level tab name: $nav.external_tabs.tab.name$</p>
+$endif$
+$if(nav.external_tabs.tab.type)$
+<p>Top-level tab type: $nav.external_tabs.tab.type$</p>
+$endif$
+$if(nav.external_tabs.tab.path)$
+<p>Top-level tab path: $nav.external_tabs.tab.path$</p>
+$endif$
+$endfor$
+</div>
+$endif$
+$endfor$
+$endif$
+$endfor$
+$endif$

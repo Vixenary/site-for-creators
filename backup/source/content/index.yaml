@@ -1,0 +1,89 @@
+---
+title: 'Home'
+description: 'Welcome to my site! Hope you find something interesting.'
+show-description: True
+page-link: '/'
+page-type: 'landing'
+content:
+- row:
+  - row:
+    - type: 'text'
+      heading: 'What is this?'
+      text-content: |
+        This site is just a personal project I felt like working on during
+        quarantine. I'll host some random guides, thoughts about things going
+        on, etc. that I feel like writing up (hence the site title). For
+        example, I wrote a really old guide about a program called Macroquest2
+        a long time ago that I might port to this site.
+
+        I've also thought about putting together some basic technical writing
+        pages that list some different resources that could be used to start
+        learning what technical writing is like. Technical writing is what I do
+        for a living, so I thought it might be interesting to collect some of
+        my thoughts here.
+
+        If you're interested in art, I've also thought about posting
+        commissions, pictures of art I have up on my walls, and such. You can
+        probably find most of that on my Twitter (if I've even remembered to
+        post it), but it might be here as well.
+
+        I have links to my Twitter, GitHub, and LinkedIn in the top right
+        corner of the site in case any of this seems interesting and you feel
+        like looking for more. I'll probably end up posting the source for
+        this on my GitHub if I feel that someone might be able to get some
+        worth out of it.
+      row:
+      - type: buttons
+        buttons:
+        - {
+            text-content: 'Macroquest2 guide',
+            link: './'
+          }
+        - {
+            text-content: 'Technical writing info',
+            link: './'
+          }
+        - {
+            text-content: 'Twitter',
+            link: 'https://twitter.com/Harmtouch'
+          }
+        - {
+            text-content: 'Site source',
+            link: './'
+          }
+  - row:
+    - type: 'carousel'
+      description: 'These are some commission/sketch pieces from amazing artists. Click on the pictures to see who drew them!'
+      images:
+      - {
+          image: '/Pictures/Hana/Adora.jpg_large',
+          alt: 'Adora from She-Ra',
+          link: 'https://twitter.com/hana_piana',
+          index: 0,
+          active: 'true'
+        }
+      - {
+          image: '/Pictures/Hana/Nagatoro.jpg_large',
+          alt: "Nagatoro from Please Don't Bully Me, Nagatoro",
+          link: 'https://twitter.com/hana_piana',
+          index: 1
+        }
+      - {
+          image: '/Pictures/Evulchibi/Sketches for me/yae-tsukishima.png',
+          alt: 'Yae Tsukishimia from Saotome Girl',
+          link: 'https://twitter.com/Evulart',
+          index: 2
+        }
+      - {
+          image: '/Pictures/Evulchibi/Sketches for me/double-trouble.png',
+          alt: 'Double Trouble from She-Ra',
+          link: 'https://twitter.com/Evulart',
+          index: 3
+        }
+      - {
+          image: '/Pictures/Evulchibi/Sketches for me/Fuyuki.png',
+          alt: 'Fuyuki from Dosanko Gyaru is Mega Cute',
+          link: 'https://twitter.com/Evulart',
+          index: 4
+        }
+...

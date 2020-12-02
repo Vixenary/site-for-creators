@@ -1,0 +1,18 @@
+<!--<p>Inner row type: $it.type$</p>-->
+<section class="landing-page-$it.type$-row">
+$if(it.heading)$
+$it.heading:heading()$
+$endif$
+$if(it.text-content)$
+$it.text-content:text-content()$
+$endif$
+$if(it.buttons)$
+$it.buttons:buttons()$
+$endif$
+$if(it.images)$
+$it:carousel()$
+$endif$
+$if(it.row)$
+$it.row:landing-page-content-blocks()$
+$endif$
+</section>

@@ -1,0 +1,23 @@
+<section class="landing-page-row">
+$for(it.row)$
+  $for(it.row.row)$
+  $if(it.row.row.type)$
+  <section class="landing-page-$it.row.row.type$-row">
+    $if(it.row.row.heading)$
+    <h2>$it.row.row.heading$</h2>
+    $endif$
+    $if(it.row.row.text-content)$
+    $it.row.row.text-content$
+    $endif$
+    $if(it.row.row.row)$
+    ${ it.row.row.row:partial-test() }
+    $endif$
+    $if(it.row.row.images)$
+    ${ it.row.row:partial-test() }
+    $endif$
+  </section>
+  $endif$
+  $endfor$
+$endfor$
+</section>
+

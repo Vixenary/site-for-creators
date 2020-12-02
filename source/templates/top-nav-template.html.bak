@@ -1,0 +1,18 @@
+$for(nav)$
+$if(nav.content-tabs)$
+<div class="top-nav-tabs">
+$for(nav.content-tabs)$
+  <tab>
+    <a href="$it.path$">$it.tab$</a>
+  </tab>
+$endfor$
+</div>
+$endif$
+$if(nav.external-tabs)$
+<div class="info-links">
+$for(nav.external-tabs)$
+  <a href="$it.link$" $if(it.target)$target="$it.target$"$endif$>$it.tab$</a>
+$endfor$
+</div>
+$endif$
+$endfor$

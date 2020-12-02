@@ -1,0 +1,20 @@
+---
+nav:
+- content-tabs:
+  - tab: 'Writings'
+    path: './'
+  - tab: 'Ramblings'
+    path: './'
+  - tab: 'About Me'
+    path: './'
+- external-tabs:
+  - tab: 'Twitter'
+    link: 'https://twitter.com/Harmtouch'
+    target: 'twitter'
+  - tab: 'GitHub'
+    link: 'https://github.com/FintanKelly'
+    target: 'github'
+  - tab: 'LinkedIn'
+    link: 'https://www.linkedin.com/in/fintank/'
+    target: 'linkedin'
+...

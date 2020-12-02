@@ -1,0 +1,52 @@
+$if(it.type)$
+<div class="landing-page-$it.type$-row">
+$if(it.row.buttons)$
+  <a href="$it.buttons.link$"
+     class="landing-page-button">
+     $it.buttons.text-content$</a>
+$elseif(it.images)$
+<div class="carousel-container">
+  <div class="carousel">
+    <div class="carousel-deck">
+      $for(it.images)$
+      <a
+         $if(it.images.link)$
+         href="$it.images.link$"
+         target="carousel-image"
+         $endif$
+         class="carousel-slide"
+         data-index="$it.images.index$"
+         $if(it.images.active)$active$endif$>
+        <img src="$it.images.image$"
+             alt="$it.images.alt$" />
+      </a>
+      $endfor$
+    </div>
+  </div>
+    <div class="carousel-indicators">
+      $for(it.images)$
+      <div class="carousel-indicator"
+           data-index="$it.images.index$"
+           $if(it.images.active)$
+           active
+           $endif$></div>
+      $endfor$
+    </div>
+    <div class="carousel-controls">
+      <div class="previous-button">
+        <i class="material-icon">keyboard_arrow_left</i>
+      </div>
+      <div class="carousel-control-buffer"></div>
+      <div class="next-button">
+        <i class="material-icon">keyboard_arrow_right</i>
+      </div>
+    </div>
+    $if(it.description)$
+    <p class="carousel-description">
+      <em>$it.description$</em>
+    </p>
+    $endif$
+</div>
+$endif$
+</div>
+$endif$

@@ -1,0 +1,9 @@
+To generate the site:
+- Process the site-config.yaml:
+  pandoc site-config.yaml -f markdown -t html -s -o landing-page-yaml.html --template=site-config-template
+- Process the top-nav.yaml:
+  pandoc top-nav.yaml -f markdown -t html -s -o top-nav.html --template=top-nav-template
+- Process the index.yaml:
+  pandoc index.yaml -f markdown -t html -s -o ../index-yaml.html --template=landing-page-yaml
+- Process the guides page:
+  pandoc guide.md -f markdown -t html -s -o ../guide.html --template=default

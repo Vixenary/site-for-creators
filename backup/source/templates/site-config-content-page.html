@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta property="og:site_name" content="$site-name$">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="$theme-color$">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>$$title$$</title>
+    <meta property="og:title" content="$$title$$">
+    $$if(page-link)$$
+    <meta property="og:url" content="$site-link$$$page-link$$">
+    $$endif$$
+    <meta property="og:locale" content="en">
+    <meta name="description" content="$$description$$">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"
+     href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link rel="stylesheet"
+     href="https://fonts.googleapis.com/css?family=Work+Sans:500">
+    <link rel="stylesheet"
+     href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" async src="main.js"></script>
+  </head>
+  <body type="$$if(page-type)$$$$page-type$$$$else$$doc$$endif$$"
+        theme="$theme-color$">
+    <section class="page-wrapper">
+      <nav class="page-top-nav
+                  $$if(lower-nav)$$
+                  $$elseif(show-description)$$
+                  $$else$$
+                  bottom-shadow
+                  $$endif$$">
+        <div class="site-logo-wrapper">
+          <a class="site-logo" href="./"></a>
+        </div>
+        <div class="site-name">
+          <a href="./" class="site-name-link">
+            $site-name$
+          </a>
+        </div>
+        $$top-nav()$$
+      </nav>
+      $$if(show-description)$$
+      <div class="landing-page-description bottom-shadow">
+        <p>$$description$$</p>
+      </div>
+      $$endif$$
+      <div class="content">
+      $$body$$
+      </div>
+      <nav class="page-footer top-shadow">
+        <h3>References</h3>
+        <ul>
+          <li>
+            If you're interested in the source for this site, see my
+            <a href="https://github.com/FintanKelly"
+               target="github">GitHub</a>.
+          </li>
+          <li>
+            As an exercise, this site is based off
+            <a href="https://developers.google.com/" target="google">
+            Google's developers.google.com</a> site and uses
+            <a href="https://pandoc.org/index.html" target="pandoc">
+              Pandoc</a> to convert YAML and Markdown content to HTML.
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </body>
+</html>

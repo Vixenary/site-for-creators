@@ -1,0 +1,584 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"caro",
+				"carouselIndicators"
+			],
+			[
+				"carousel",
+				"carousel-indicator"
+			],
+			[
+				"querySele",
+				"querySelectorAll"
+			],
+			[
+				"tran",
+				"translateX()\ttransform"
+			],
+			[
+				"search",
+				"searchURL"
+			],
+			[
+				"donatin",
+				"donationItemsArray"
+			],
+			[
+				"Beast",
+				"Beast_Master"
+			],
+			[
+				"subclass",
+				"subclassNumber"
+			],
+			[
+				"bD",
+				"bDamageBonusTwo"
+			],
+			[
+				"bDa",
+				"bDamageBonus"
+			],
+			[
+				"critC",
+				"critChanceScale"
+			],
+			[
+				"sub",
+				"subclassNumber"
+			],
+			[
+				"imgLink",
+				"imgLinkRequestCount"
+			],
+			[
+				"sele",
+				"selectedSite"
+			],
+			[
+				"nu",
+				"numberOfPosts"
+			],
+			[
+				"for",
+				"forEach"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/Downloads/war3map (1).j",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"perltidy",
+				"PerlTidy: Tidy"
+			],
+			[
+				"package control instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Everquest stuff/EQEmu Server/quests/global/spells/544.lua",
+		"/D/Everything/Websites/Guides/index.html",
+		"/D/Everything/Websites/Guides/main.js",
+		"/D/Everything/Websites/Guides/main.css",
+		"/D/Everything/Websites/Guides/source/generate-site.bat",
+		"/D/Everything/Websites/Guides/TODO",
+		"/D/Everything/Websites/Guides/source/default.html",
+		"/D/OnlyFans-Master/.settings/config.json",
+		"/D/OnlyFans-4.0/settings/extra_auth.json",
+		"/D/OnlyFans-4.0/settings/config.json",
+		"/D/Everything/Websites/Guides/guide.html",
+		"/D/Everything/Websites/Guides/source/index.yaml",
+		"/D/Everything/Websites/Guides/source/guide.md",
+		"/D/Everything/Websites/Guides/source/pandoc-howto",
+		"/D/Everything/Websites/Guides/index-md-test.html",
+		"/D/Everything/Websites/Guides/source/index-md-test.md",
+		"/D/Everything/Websites/Guides/source/index.html",
+		"/D/Everything/Websites/Guides/source/metadata/metadata.yaml",
+		"/D/e621dl-master/README.md",
+		"/D/Everything/Websites/Guides/source/metadata.yaml",
+		"/D/e621dl-master/e621dl/local.py",
+		"/D/e621dl-master/config.yaml",
+		"/D/Everything/Websites/Guides/source/templates/default.html",
+		"/D/Everything/Websites/Guides/sitemap-testing.html",
+		"/D/Everything/Websites/Guides/markdown-testing/pandoc-howto",
+		"/D/Everything/Websites/Guides/markdown-testing/metadata.yaml",
+		"/D/Everything/Websites/Guides/markdown-testing/guide.md",
+		"/D/Everything/Websites/Guides/markdown-testing/index.html",
+		"/D/Everything/Websites/Guides/markdown-testing/default.html",
+		"/D/Everything/Websites/Guides/markdown-testing/preprocess-index.html",
+		"/D/Everything/Websites/Guides/markdown-testing/index-test.html",
+		"/D/Everything/Websites/Guides/markdown-testing/guide.html",
+		"/D/Everything/Websites/Guides/markdown-testing/index-2.html",
+		"/D/Everything/Websites/Guides/markdown-testing/test.yaml",
+		"/D/OnlyFans-4.0/modules/onlyfans.py",
+		"/D/OnlyFans-4.0/StartDatascraper.py",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/TODO.txt",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/macro.ini",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/main.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/events.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/loot.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/inventory.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/ini.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/miscHelpers.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/fusion-heal.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/bruiseMacro.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/trackTokens.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/reap.mac",
+		"/C/Users/finta/AppData/Local/Divinity 2/Profile/graphicoptions.xml",
+		"/D/OnlyFans-3.9/modules/onlyfans.py",
+		"/D/OnlyFans-3.9/settings/config.json",
+		"/D/OnlyFans-3.9/StartDatascraper.py",
+		"/D/OnlyFans-Master/datascraper/main_datascraper.py",
+		"/D/OnlyFans-Master/helpers/main_helper.py",
+		"/D/OnlyFans-Master/start_ofd.py",
+		"/D/OnlyFans-Master/tests/main_test.py",
+		"/D/Downloads/War3map_-_Copy.j",
+		"/D/Downloads/War3map.j",
+		"/C/Minecraft stuff/DDSS server/config/randompatches.cfg",
+		"/C/Minecraft stuff/DDSS server/config/foamfix.cfg",
+		"/C/Minecraft stuff/DDSS server/server.properties",
+		"/C/Users/finta/Desktop/Everything/Warcraft III/Map Scripts/war3map.j",
+		"/D/Downloads/War3map (1).j",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/MQ2AutoLogin.ini",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Main.mac",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Core.inc",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/ninjadvloot.inc",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Utility.inc",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Item.inc",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Start.mac",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Events.inc",
+		"/C/Minecraft stuff/DDSS server/config/craftingtweaks.cfg",
+		"/C/Minecraft stuff/DDSS server/config/defaultoptions.cfg",
+		"/C/Minecraft stuff/DDSS server/usercache.json",
+		"/D/Everything/Minecraft/Vanilla Server/server.properties",
+		"/D/Everything/Minecraft/Sevtech Ages Server/server.properties",
+		"/C/EQEmu RoF2 - ProFusion/uifiles/default/EQUI_BigBankWnd.xml",
+		"/C/EQEmu RoF2 - ProFusion/uifiles/default/EQUI.xml",
+		"/C/EQEmu RoF2 - ProFusion/uifiles/default/EQLSUI.xml",
+		"/D/Downloads/war3map.j",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/varList.ini",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/miscSub.inc",
+		"/C/Users/finta/Documents/The Witcher 3/user.settings",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/kethiusKill.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/Archived/treasureMapsWORKS.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/Archived/treasureMaps.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/loottemp/loot.inc",
+		"/C/EQEmu RoF2 - ProFusion/uifiles/default/EQUI_Inventory.xml",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/alert.inc",
+		"/D/Everything/angular/test project/test-project/dist/test-project/index.html",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/Archived/DrogaKill2.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/Archived/AutoLoot.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/watchLoot.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/lootZone.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/varList.ini",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/lootZone.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/miscSub.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/main (conflicted copy 2020-01-27 203057).mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/currentMacros.sublime-workspace",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/fusion-heal.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/backup/testKill.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/miscHelpers.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/ini.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/loot.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/main.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/events.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/ini.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/Events.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/profusion/Main.mac",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/combine.mac",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Debuff.inc",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/dropList.ini",
+		"/D/Everything/Website/danbooru.js",
+		"/D/Everything/Website/shadbase.js",
+		"/D/Everything/Website/hentai-foundry.js",
+		"/D/Everything/Website/nhentai.js",
+		"/D/Everything/Website/testing/hentai-foundry-2",
+		"/D/Everything/Website/testing/hentai-foundry.html",
+		"/D/Everything/Website/generalJS.js",
+		"/D/Everything/Website/style.css",
+		"/D/Everything/Website/index.html",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/assistMacro2.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/attackMacro2.mac",
+		"/D/Everything/EQEmu/MQ2 UF/Macros/keldMacro.mac",
+		"/D/Everything/EQEmu/eqprofusion-mq2emu_rof2-master/Macros/profusion/Setup - Sample.ini",
+		"/D/Everything/EQEmu/MQ2 UF/Macros/fusion-heal.mac",
+		"/D/Everything/EQEmu/MQ2 RoF2 Warp/Macros/healMacro.mac",
+		"/D/Everything/EQEmu/MQ2 UF/Macros/AutoKill2.mac"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"herosave ",
+			"herosave",
+			"HeroLoad",
+			"-load",
+			"heroload",
+			"herosave",
+			"udg_saveHero",
+			"heroload",
+			"H00N",
+			"-save",
+			"HeroSave",
+			"herosave ",
+			"herosave",
+			"makefile",
+			"udg_saveHero",
+			"H00N",
+			"udg_hero[",
+			"udg_hero",
+			"sitemap",
+			"theme-color",
+			"967BB6",
+			"content.row.row.",
+			"landing-page-carousel",
+			".landing-page-text-item",
+			".landing-page-button-row",
+			"content.outer-row.row",
+			"content.row",
+			"37em",
+			"page-desc",
+			"1em",
+			"GitHub",
+			"udg_saveData_GuanQia",
+			"MakeFile",
+			"submitintegerd",
+			"submit",
+			"PVE01",
+			"PVE08",
+			"PVE01",
+			"storeint",
+			"PVE08",
+			" ",
+			"multiboard",
+			"Zone.",
+			"MeshLODDistanceScale",
+			"invslot",
+			"me.pet",
+			"getkeyval",
+			"|",
+			"Find.",
+			"finditem",
+			"/tar",
+			"/deca",
+			"/decal",
+			"]})",
+			"}\n",
+			"lootable",
+			"Invite",
+			"inven",
+			"Invite",
+			"profusion",
+			"looting",
+			"sune",
+			"Command_farmarea",
+			"farm",
+			"farmarea",
+			"farm",
+			"[]",
+			"/tank",
+			"/alias",
+			"/alias]",
+			"/alias",
+			"Endurance",
+			"Event_Endurance",
+			"Invite",
+			"DoEvents",
+			"warp",
+			"loot",
+			"Test",
+			"/else",
+			"backup_file_url",
+			"large_file_url",
+			"statement",
+			"MYSQL_",
+			"mysql_real_query",
+			"MYSQL_",
+			"exec",
+			"fetch",
+			"execute",
+			"1494",
+			"1493",
+			"1492",
+			"1491",
+			"1490",
+			"1489",
+			"message",
+			"||",
+			"debug",
+			"perl::tidy",
+			"}\n",
+			"1679",
+			"1677",
+			" ",
+			"C:/",
+			"#",
+			"C:\\",
+			"C:/",
+			"imgData",
+			"remove",
+			"429",
+			"#galleryheight",
+			"galleryCount",
+			"fullgalleryheight",
+			"true",
+			"galleryHeight",
+			"toggle",
+			"active",
+			"imageReady",
+			"searchQuery",
+			"retrySingleImage",
+			"retryFailedImages",
+			"allorigin",
+			"H00W",
+			"n00L",
+			"I04S",
+			"udg_Tl",
+			",30.0",
+			",0.01",
+			",30.0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"it.",
+			"landing-page-carousel-row",
+			".landing-page-text-row",
+			".landing-page-buttons-row",
+			"content.outer-row.inner-row",
+			"content.outer-row",
+			".",
+			"",
+			"large_file_url",
+			"backup_file_url",
+			"1495",
+			"1494",
+			"1493",
+			"1492",
+			"1491",
+			"1490",
+			"&&",
+			",",
+			"imgReference",
+			"retrynHentaiSingleImage",
+			"retrynHentaiFailedImages",
+			"\\n",
+			"",
+			"$",
+			"",
+			"$",
+			"",
+			"$",
+			"imgData",
+			"\\'",
+			"pingy1",
+			"pingx1",
+			"call DoNothing()",
+			"DoNothing()",
+			"call DoNothing()\\n",
+			"call DoNothing()",
+			"",
+			"shadbaseUpdateCounter",
+			"2",
+			"searchRegex",
+			"htmlData",
+			"searchURL",
+			"imgData[i]",
+			"count",
+			"imgData[createImageCounter]",
+			"file_url",
+			"retryFailedImages",
+			"jsonData",
+			"",
+			"pageInput"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/Downloads/war3map (1).j",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "website.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

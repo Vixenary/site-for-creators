@@ -1,0 +1,30 @@
+$if(nav)$
+$for(nav)$
+$if(nav.upper_tabs)$
+<div class="top-nav-tabs">
+$for(nav.upper_tabs)$
+$if(nav.upper_tabs.tab)$
+$for(nav.upper_tabs.tab)$
+  <tab>
+    <a href="$nav.upper_tabs.tab.path$">$nav.upper_tabs.tab.name$</a>
+  </tab>
+$endfor$
+$endif$
+$endfor$
+</div>
+$elseif(nav.external_tabs)$
+<div class="info-links">
+$for(nav.external_tabs)$
+$if(nav.external_tabs.tab)$
+$for(nav.external_tabs.tab)$
+  <a href="$nav.external_tabs.tab.path$"
+     $if(nav.external_tabs.tab.target)$
+     target="$nav.external_tabs.tab.target$"
+     $endif$>$nav.external_tabs.tab.name$</a>
+$endfor$
+$endif$
+$endfor$
+</div>
+$endif$
+$endfor$
+$endif$

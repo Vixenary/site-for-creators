@@ -1,0 +1,37 @@
+---
+nav:
+- upper_tabs:
+  - tab:
+    - name: Writings
+      lower_tabs:
+      - tab:
+        - name: Technical writing
+          contents:
+          - page: What is technical writing?
+            path: ./technical-writing
+          - page: How do technical writers think?
+            path: ./technical-writing-thinking
+      - tab:
+        - name: Programming
+          contents:
+          - page: What is Pandoc?
+            path: ./pandoc
+  - tab:
+    - name: Ramblings
+      contents:
+      - page: Ramble Test Example
+      - path: ./example
+  - tab:
+    - name: About Me
+      path: ./about-me
+- external_tabs:
+  - tab:
+    - name: Twitter
+      path: https://twitter.com/Harmtouch
+  - tab:
+    - name: GitHub
+      path: https://github.com/FintanKelly
+  - tab:
+    - name: LinkedIn
+      path: https://www.linkedin.com/in/fintank/
+...

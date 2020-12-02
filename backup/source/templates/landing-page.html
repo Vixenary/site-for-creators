@@ -1,0 +1,9 @@
+<section class="landing-page-row">
+$for(it)$
+<!--<p>Outer row: $it$</p>-->
+$for(it.row)$
+<!--<p>Inner row: $it.row$</p>-->
+$it.row.row:landing-page-content-blocks()$
+$endfor$
+$endfor$
+</section>

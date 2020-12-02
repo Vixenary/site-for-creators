@@ -1,0 +1,23 @@
+TODO:
+- Create hamburger menu for when the width is < 900px
+- Set up format and styling for actual generated Markdown pages
+- Think about converting top navbar to fixed position instead of relative
+- Implement sitemap generation:
+  - Put all navigation into one .yaml file
+  - Generate top nav into its own template (that will later be included in the
+    main landing/content page templates with `$top-nav()$`)
+  - Generate the sitemap into its own template (that will later be included in
+    main content page template with `$sitemap()$`)
+  - Create a LUA filter that will run over the HTML-generated content pages and
+    remove non-relevant sitemap content
+    - The filter will read the name of the *generated* file to open from the
+      `filepath` metadata provided when running the pandoc command from the batch script
+      - For example, if we're converting `content.md` to `content.html`,
+        `filepath` should reference `content.html` since that's the file we need to edit
+    - Note: When looping through the landing/content source files to convert,
+      the filepath should be provided through `--metadata filepath="..."` so
+      users don't need to provide it in the file
+      - Can probably get the filepath as a variable and use it in the actual
+        pandoc command as well
+  - When generating each content page, specify the `--lua-filter` so that
+    irrelevant sitemap content is removed
